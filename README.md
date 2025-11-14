@@ -2,13 +2,9 @@
 
 ## Overview
 
-- **What is it?**
-  - A chrome extension that turns Steam into a review guesser game.
-  - Hides review count (and some other clues) from Steam pages and asks you to guess the count instead.
-  - Adds buttons at the top of the page that bring you to completely random games on Steam.
-- **Why?**
-  - Improving intuition for game success
-  - Provides a new way to browse Steam and to leave the own bubble
+Jonas Review Guesser is a Chrome extension that turns Steam into a review guessing game. It hides the review count (and some other clues) on Steam store pages and asks you to guess the number of reviews instead. On top of that, it adds buttons at the top of the page that take you to completely random games on Steam, giving you a new way to browse the store, step outside your usual bubble, and gradually improve your intuition for how successful different games are.
+
+![preview image](images/GuessExample.PNG)
 
 ### Random Game Navigation
 
