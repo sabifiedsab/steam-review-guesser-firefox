@@ -1,8 +1,8 @@
-# Jonas Review Guesser
+# Steam Review Guesser
 
 ## Overview
 
-Jonas Review Guesser is a Chrome extension that turns Steam into a review guessing game. It hides the review count (and some other clues) on Steam store pages and asks you to guess the number of reviews instead. On top of that, it adds buttons at the top of the page that take you to completely random games on Steam, giving you a new way to browse the store, step outside your usual bubble, and gradually improve your intuition for how successful different games are.
+Steam Review Guesser (based on [Jonas Review Guesser](https://github.com/LooveToLoose/Jonas-Review-Guesser)) is a Firefox extension that turns Steam into a review guessing game. It hides the review count (and some other clues) on Steam store pages and asks you to guess the number of reviews instead. On top of that, it adds buttons at the top of the page that take you to completely random games on Steam, giving you a new way to browse the store, step outside your usual bubble, and gradually improve your intuition for how successful different games are.
 
 ![preview image](images/GuessExample.PNG)
 
@@ -22,39 +22,36 @@ Jonas Review Guesser is a Chrome extension that turns Steam into a review guessi
 ## Limitations
 
 It is a very simple application with many limitations:
-- **Bug: ** Current version only works when your Steam is set to English.
+- **Bug:** Current version only works when your Steam is set to English.
 - Somewhat hinders your normal Steam browsing experience (you need to manually turn the Plugin off).
 - The database of appIDs is not automatically updated so the newer titles might not be included.
 - Sometimes the extension brings you to a Steam page that is not or no longer available in your region.
 - Lacking a lot of features that might be cool e.g. filtering by tag, entering the guess into a text field, etc. etc.
 
-It is not my plan to work on this too much more so if you'd like to see these limitations resolved, fork it and do it yourself! I'd be happy to try out your version. :)
+It is not my plan to work on this too much more so if you'd like to see these limitations resolved, fork it and do it yourself! I only made it native firefox, and don't plan to update it much else. Feel free to contribute!
 
-## Installation (Local Chrome Extension)
+## Installation (Local Firefox Extension)
 
 ### Prerequisites
 
-- **Google Chrome** installed.
+- **Firefox** or **Firefox-based browser** installed.
 - The extension source code downloaded:
   - Either via `git clone`:
     ```bash
-    git clone https://github.com/LooveToLoose/Jonas-Review-Guesser
+    git clone https://github.com/sabifiedsab/steam-review-guesser-firefox
     ```
   - Or by downloading a ZIP and extracting it.
 
-### Step 1: Open Chrome Extensions Page
+### Step 1: Open the Add-ons Debugging Page
 
-- In Chrome, go to:
-  - `chrome://extensions/`
-- Enable **Developer mode**:
-  - Toggle the **Developer mode** switch in the top-right corner.
+- In Firefox, go to:
+  - `about:debugging#/runtime/this-firefox`
 
 ### Step 2: Load the Unpacked Extension
 
-- Click **“Load unpacked”**.
+- Click **“Load Temporary Add-on”**.
 - Select the folder containing the extension:
   - The folder that includes `manifest.json`.
-- Confirm that **Jonas Review Guesser** appears in the list of extensions.
 
 ### Step 3: Set Steam language to ENGLISH!
 - **Set your language to "English"!** This is crucial for the current version to work.
@@ -73,16 +70,16 @@ It is not my plan to work on this too much more so if you'd like to see these li
 
 ### Enable
 
-- Go to `chrome://extensions/`.
-- Find **Jonas Review Guesser**.
+- Go to `about:addons`.
+- Find **Steam Review Guesser**.
 - Ensure the toggle is switched **on**.
 
 ### Disable
 
-- Go to `chrome://extensions/`.
-- Find **Jonas Review Guesser**.
+- Go to `about:addons`.
+- Find **Steam Review Guesser**.
 - Switch the toggle **off** to temporarily disable it.
-- (Optional) Click **Remove** if you want to uninstall it completely.
+- (Optional) Click the *three dots*, and **Remove** if you want to uninstall it completely.
 
 ---
 
@@ -96,23 +93,23 @@ It is not my plan to work on this too much more so if you'd like to see these li
 
 do the following:
 
-### Step 1: Go to the Extensions Page
+### Step 1: Open the Add-ons Debugging Page
 
-- Open `chrome://extensions/`.
-- Ensure **Developer mode** is still enabled.
+- In Firefox, go to:
+  - `about:debugging#/runtime/this-firefox`
 
-### Step 2: Reload the Extension
+### Step 2: Load the Unpacked Extension
 
-- Find **Jonas Review Guesser**.
-- Click the **Reload** button (⟲) on the extension card.
-  - This loads the latest version of the source from the folder.
+- Click **“Load Temporary Add-on”**.
+- Select the folder containing the extension:
+  - The folder that includes `manifest.json`.
 
 ### Step 3: If Something Breaks
 
 - Disable and re-enable the extension.
 - If issues persist:
   - Click **Remove**.
-  - Then click **Load unpacked** again and select the updated folder.
+  - Then click **Load Temporary Add-on...** again and select the updated folder.
 
 ---
 
@@ -128,19 +125,11 @@ See the license file for more details.
 
 ## FAQ
 
-> Will there be a Firefox version?
-
-Only if one of you makes one.
-
 > Can you add *(insert any feature)* to this extension?
 
-Probably not. I'm happy to try out your version if you add any cool stuff.
+Probably not. 
 
 > I think it should be different. I think it should be...
 
 Okay. Just make it.
-
-> Can you make a YouTube video guessing our Steam games?
-
-Sure, I'll do that on my YT channel (@jonastyroller) and Discord. Sounds like a great idea. 
 

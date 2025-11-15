@@ -30,12 +30,8 @@
       return CSV_CACHE[relativePath];
     }
 
-    const url =
-      typeof chrome !== "undefined" &&
-      chrome.runtime &&
-      chrome.runtime.getURL
-        ? chrome.runtime.getURL(relativePath)
-        : relativePath;
+    const api = typeof browser !== "undefined" ? browser : chrome;
+    const url = api.runtime.getURL(relativePath);
 
     CSV_CACHE[relativePath] = fetch(url)
       .then((r) => {

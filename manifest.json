@@ -1,7 +1,7 @@
 {
-  "name": "Jonas Review Guesser",
+  "name": "Steam Review Guesser",
   "version": "1.1.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "description": "Turns Steam page into a guessing game.",
   "content_scripts": [
     {
@@ -17,25 +17,20 @@
         "src/nextGame.js",
         "src/main.js"
       ],
-      "css": ["content.css"],
+      "css": [
+        "content.css"
+      ],
       "run_at": "document_start"
     }
   ],
   "permissions": [],
   "web_accessible_resources": [
-    {
-      "resources": [
-        "data/released_appids.csv",
-        "data/Batch_1.csv",
-        "data/Batch_2.csv",
-        "data/Batch_3.csv",
-        "data/Batch_4.csv",
-        "data/Batch_5.csv",
-        "data/Batch_6.csv"
-      ],
-      "matches": [
-        "<all_urls>"
-      ]
-    }
+    "data/released_appids.csv",
+    "data/Batch_1.csv",
+    "data/Batch_2.csv",
+    "data/Batch_3.csv",
+    "data/Batch_4.csv",
+    "data/Batch_5.csv",
+    "data/Batch_6.csv"
   ]
 }
